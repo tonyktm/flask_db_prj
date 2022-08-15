@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h2>Student Data</h2>
+  
+  <table>
+    <tr>
+      <th>ID no</th>
+      <th>Name</th>
+      <th>Division</th>
+      <th>Status</th>
+      <th>Created at</th>
+    </tr>
+    {% for row in rows %}
+    <tr>
+        <td>{{ row.id }}</a></td>
+        <td>{{ row.name }}</td>
+        <td>{{ row.division }}</td>
+        <td>{{ row.status }}</td>
+        <td>{{ row.created_at }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  
+  </body>
+  </html>
+  
+  

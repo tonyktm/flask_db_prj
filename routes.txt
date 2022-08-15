@@ -1,0 +1,16 @@
+Students
+========
+
+POST :
+http://localhost:5001/students
+
+{
+    "name" : "Josu",
+    "division" : "11",
+    "status" : "active"
+}
+
+GET:
+students
+students?search_name=Tony
+students?search_div=11&search_name=Josu
