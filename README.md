@@ -10,4 +10,15 @@ create database testdb;
 create user dbuser1 with encrypted password 'rbu123';
 grant all privileges on database testdb to dbuser1;
 
+
+psql -h localhost -d testdb -U dbuser1 -W
+testdb=> \dt; --> describe table
+
+From 
+
+pg_dump -h localhost -t 'public.students' --schema-only testdb
+
+Create the fields:
+select * from students;
+
 ```
